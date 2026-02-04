@@ -2,14 +2,12 @@
 
 A desktop application for tracking IT equipment across multiple locations, built with Python, Tkinter, and SQLite.
 
-## Features
+## Bugs
+ - 'Deploy Computer' screen not scrollable
+ - 'Add New Item' screen doesn't show text for save/cancel buttons
 
-- **View Inventory**: Browse all items with search and location filtering
-- **Update Counts**: Use +/- buttons or type directly to update item quantities
-- **Add Items**: Add new items to any location
-- **Delete Items**: Remove items from inventory with confirmation
-- **Deploy Computer**: Subtract multiple items at once when setting up a new computer
-- **Summary Stats**: View total counts per location at a glance
+## Upcoming Fixes
+ - 'Deploy Computer' screen will be changed to a shopping cart style screen
 
 ## Upcoming Features
 - Item History
@@ -33,22 +31,4 @@ python inventory_app.py
 On GitHub repo click green 'Code' button > Download ZIP > Unzip > Type and enter 'cmd' in address bar(while in the folder path) >
 In terminal enter 'python inventory_app.py'
 
-## Database
-
-The application uses SQLite and automatically creates an `inventory.db` file in the same directory on first run. The database is seeded with sample data including:
-
-- 5 locations (Help Desk, Storage Room, Computer Lab 1 & 2, Server Room)
-- 23 inventory items across all locations
-
-To reset the database, simply delete the `inventory.db` file and restart the application.
-
-## Project Structure
-
-```
-python_app/
-├── inventory_app.py   # Main application with Tkinter GUI
-├── database.py        # SQLite database operations
-├── requirements.txt   # Dependencies (standard library only)
-└── README.md          # This file
-```
 
